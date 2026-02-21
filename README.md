@@ -12,10 +12,38 @@ Haz un fork de este proyecto en tu repositorio de Github y contesta a las siguie
    
 2. Revisa las pruebas de la suma y comenta lo que te parezca de interés
 
-  El método sumarPositivosMal da un error en las pruebas. El resulto esperado de la suma de los dos números es 4, mientras que el resultado real    debe ser 5. Cuando el error de código quede corregido y el resultado esperado sea igual al resultado real, las pruebas mostrarán que todo         funciona correctamnete.
+  El método sumarPositivosMal da un error en las pruebas. El resulto esperado de la suma de los dos números es 4, mientras que el resultado real debe ser 5. Cuando el error de código quede corregido y el resultado esperado sea igual al resultado real, las pruebas mostrarán que todo funciona correctamnete.
    
 3. Realiza un estudio de caja negra de la división e implementa las pruebas en junit: Se realizará en markdown.
    
+  - Caso de Prueba 1
+      valor1: 10
+      valor2: 2
+    esperado: 5
+  - Caso de Prueba 2
+      valor1: -10
+      valor2: 2
+      esperado: -5
+  - Caso de Prueba 3
+      valor1: 10
+      valor2: -2
+    esperado: -5
+  - Caso de Prueba 4
+      valor1: -10
+      valor2: -2
+      esperado: 5
+  - Caso de Prueba 5
+      valor1: 4
+      valor2: 0
+      esperado: Excepción
+  - Caso de Prueba 6
+      valor1: 0
+      valor2: 2
+      esperado: 0
+  - Caso de Prueba 7
+      valor1: 10
+      valor2: 1
+      esperado: 10
 
 
 

@@ -56,4 +56,17 @@ public class CalculadoraTest {
         assertEquals(OperacionNoValidaException.MSG, ex.getMessage());
 
     }
+
+    @Test
+    void dividirCasosMultiples() {
+        assertAll("División",
+                () -> assertEquals(5, Calculadora.dividir(10, 2), "10 / 2 = 5"),
+                () -> assertEquals(-5, Calculadora.dividir(-10, 2), "-10 / 2 = -5"),
+                () -> assertEquals(-5, Calculadora.dividir(10, -2), "10 / -2 = -5"),
+                () -> assertEquals(5, Calculadora.dividir(-10, -2), "-10 / -2 = 5"),
+                () -> assertEquals(0, Calculadora.dividir(0, 2), "0 / 2 = 0"),
+                () -> assertEquals(10, Calculadora.dividir(10, 1), "10 / 1 = 10")
+    );
+}
+
 }
